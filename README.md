@@ -7,31 +7,31 @@ Comandos sacados del tutorial http://elephly.net/posts/2013-10-01-dm-crypt.html
 ### help
 Muestra ayuda breve de los comandos disponibles.
 
-    flucks help
+    fluks help
 
 ### create
 
 Generar un volumen de N MB.
 
-    flucks create ficheroCifrado 50
+    fluks create ficheroCifrado 50
 
 ### format    
 
 Formatea el volumen a ext4, este paso hay que realizarlo tras generar el volumen.
 
-    flucks format ficheroCifrado
+    fluks format ficheroCifrado
 
 ### mount
 
 Monta el volumen en el directorio indicado, para ello genera un dispositivo en */dev/mapper/secret-device*.
 
-    flucks mount fichero punto_de_montaje
+    fluks mount fichero punto_de_montaje
 
 ### umount
 
 Desmontar un volumen que hayamos montado y asociado al dispotivo */dev/mapper/secret-device*.
 
-    flucks umount punto_de_montaje
+    fluks umount punto_de_montaje
 
 ## Autocompletado
 Para tener autocompletado de los argumentos es necesario copiar el fichero *fluks* en el directorio que utilice el sistema para *bash completion*.
