@@ -1,0 +1,16 @@
+# Copiar en la ruta de bash_completion (https://wiki.debian.org/Teams/BashCompletion/Proposals/NewDirectoryLayout)
+# http://tldp.org/LDP/abs/html/tabexpansion.html
+
+_fluks()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="help create format mount umount"
+    if [[ ${cur} == * ]] ; then
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+    fi
+}
+complete -F _fluks fluks.sh

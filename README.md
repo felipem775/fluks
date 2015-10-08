@@ -33,7 +33,9 @@ Desmontar un volumen que hayamos montado y asociado al dispotivo */dev/mapper/se
 
     flucks umount punto_de_montaje
 
+## Autocompletado
+Para tener autocompletado de los argumentos es necesario copiar el fichero *fluks* en el directorio que utilice el sistema para *bash completion*.
+
 ## ToDo
 * Gestionar varios volúmenes a la vez.
 * Listado de unidades activas.
-* Añadir autocompletado de argumentos (si es posible).
