@@ -1,6 +1,6 @@
 # fluks
-Files with luks
-Gestión de ficheros cifrados con luks
+Files with luks  
+Gestión de ficheros cifrados con luks  
 Comandos sacados del tutorial http://elephly.net/posts/2013-10-01-dm-crypt.html
 
 ## Comandos
