@@ -35,6 +35,7 @@ function mount {
         sudo chown -R "$USER" "$2"
         sudo cryptsetup luksOpen $1 secret-device
         sudo mount /dev/mapper/secret-device $2
+        sudo chown $USER $2
 
 
 }
